@@ -22,7 +22,7 @@ page {
   overflow: hidden;
 }
 .box{
-  height:150rpx;
+  /* height:150rpx; */
   margin-bottom: 32rpx;
 }
 .shop-name{

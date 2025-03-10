@@ -1,10 +1,10 @@
 <view class="custom-navigation" style="width: {{ menuButtonBoundingClientRect.left }}px;height: {{ menuButtonBoundingClientRect.height + menuButtonBoundingClientRect.top }}px;padding-top: {{ menuButtonBoundingClientRect.top }}px;line-height: {{ menuButtonBoundingClientRect.height }}px;">
   <view wx:if="{{ language }}" class="language">
-    <image class="language-icon" src="/images/lang/{{language}}.png" mode="aspectFill" bind:tap="changeLang"></image>
+    <image class="language-icon" src="/images/lang/{{language}}.png" mode="aspectFill"></image>
   </view>
   <view class="mallName">{{ mallName }}</view>
 </view>
-<view wx:if="{{noticeLastOne}}" class="notice">
+<!-- <view wx:if="{{noticeLastOne}}" class="notice">
   <van-notice-bar
     mode="link"
     left-icon="volume-o"
@@ -12,24 +12,25 @@
     bind:click="goNotice"
     data-id="{{noticeLastOne.id}}"
   />
-</view>
+</view> -->
 <view wx:if="{{ !scanDining }}" class="box">
   <view class="shop-name">
     <view class="name" bindtap="selectshop">{{shopInfo.name}}</view>
-    <view wx:if="{{ shopInfo.openWaimai && shopInfo.openZiqu }}" class="select">
+    <!-- <view wx:if="{{ shopInfo.openWaimai && shopInfo.openZiqu }}" class="select">
       <view class="{{peisongType == 'zq' ? 'on' : 'off'}}" data-type="zq" bindtap="changePeisongType">{{ $t.index.pickup }}</view>
       <view class="{{peisongType == 'kd' ? 'on' : 'off'}}" data-type="kd" bindtap="changePeisongType">{{ $t.index.Delivery }}</view>
-    </view>
+    </view> -->
   </view>
-  <view class="distance-bar">
+  <!-- <view class="distance-bar">
     <view class="distance">{{shopInfo.distance}}km</view>
+    <view class="distance"></view>
     <navigator url="/pages/shop/detail?id={{shopInfo.id}}" hover-class="none">
       <view class="shop-message">
         <view class="message">{{ $t.index.shopDetail }}</view>
         <van-icon name="arrow" />
       </view>
     </navigator>
-  </view>
+  </view> -->
 </view>
 <view class="box1">
   <view class="box-1">

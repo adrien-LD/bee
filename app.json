@@ -53,16 +53,10 @@
         "text": "点餐"
       },
       {
-        "pagePath": "pages/queue/index",
-        "iconPath": "images/nav/qh-off.png",
-        "selectedIconPath": "images/nav/qh-on.png",
-        "text": "取号"
-      },
-      {
-        "pagePath": "pages/order-details/doing",
+        "pagePath": "pages/all-orders/index",
         "iconPath": "images/nav/qc-off.png",
         "selectedIconPath": "images/nav/qc-on.png",
-        "text": "取餐"
+        "text": "订单"
       },
       {
         "pagePath": "pages/my/index",
